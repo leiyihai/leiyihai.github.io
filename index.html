@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>欢迎光临我的小站</title>
+	<embed src="img/Chance Thrash - Chamomile Tea.mp3" hidden="true" autostart="true" loop="true">
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: '微软雅黑';
+		}
+		.header{
+			background: #070711;
+			width: 100%;
+			height: 60px;
+		}
+		.resume{
+			color: #313a5e;
+			font-size: 32px;
+			font-weight: bold;
+			line-height: 100px;
+		}
+		.container{
+			width: 100%;
+		}
+		.content{
+			overflow: hidden;
+		}
+		.nav{
+			width: 24%;
+			height: 880px;
+			background: #13182c;
+			float: left;
+		}
+		.nav span{
+			color: #26c149;
+			font-size: 32px;
+			font-weight: bold;
+			position: relative;
+			left: 80px;top: 60px;
+		}
+		.nav ul{
+			list-style: none;
+			position: relative;
+			left: 80px;
+			top: 140px;
+			font-size: 24px;
+		}
+		.nav ul li{
+			color: #d0d1d6;
+			padding: 20px 10px;
+		}
+		.li1{
+			height: 30px;
+			line-height: 30px;
+			text-indent: 48px;
+			background: url(img/other/nav_work.png) no-repeat;
+			background-position: left;
+		}
+		.li2{
+			height: 30px;
+			line-height: 30px;
+			text-indent: 48px;
+			background: url(img/other/nav_my.png) no-repeat;
+			background-position: left;
+		}
+		.li3{
+			height: 30px;
+			line-height: 30px;
+			text-indent: 48px;
+			background: url(img/other/nav_resume.png) no-repeat;
+			background-position: left;
+		}
+		.li4{
+			height: 30px;
+			line-height: 30px;
+			text-indent: 48px;
+			background: url(img/other/nav_other.png) no-repeat;
+			background-position: left;
+		}
+
+		.show{
+			width: 76%;height: 880px;
+			background: #181d31;
+			float: left;
+		}
+		.introduce dl{
+			overflow: hidden;
+			margin-left: 100px;
+			margin-top: 64px;
+		}
+		.head{
+			background: url(img/other/resume_head.png) no-repeat;
+			width: 110px;
+			height: 110px;
+			float: left;
+		}
+		.introduce p{
+			font-size: 20px;
+			color: #72778b;
+			font-weight: bold;
+			margin-left: 100px;
+			margin-top: 20px;
+		}
+		dd.name{
+			font-size: 42px;
+			font-weight: bolder;
+			color: white;
+			float: left;
+			position: relative;
+			left: 40px;
+		}
+		dd.job{
+			font-size: 24px;
+			font-weight: bold;
+			color: #72778b;
+			float: left;
+			position: relative;
+			left: -88px;
+			top: 60px;	
+		}
+		.experience dl{
+			overflow: hidden;
+			margin-left: 100px;
+			margin-top: 50px;
+		}
+		.exp-icon{
+			background: url(img/other/icon_experience.png) no-repeat;
+			width: 50px;
+			height: 50px;
+			float: left;
+		}
+		dl.exp-title{
+			height: 70px;
+		}
+		dd.work-exp{
+			font-size: 32px;
+			color: white;
+			font-weight: bold;
+			padding: 0px 20px;
+			float: left;
+		} 
+		dd.exp-en{
+			font-size: 18px;
+			color: #72778b;
+			float: left;
+			position: relative;
+			left: -148px;
+			top: 40px;
+		}
+		.exp-show{
+			background: url(img/other/work_line.png) no-repeat;
+			width: 1000px;
+			height: 179px;
+			position: relative;
+			left: 100px;
+		}
+		.skill dl{
+			overflow: hidden;
+			margin-left: 100px;
+			margin-top: 50px;
+		}
+		.skill-icon{
+			background: url(img/other/icon_skill.png) no-repeat;
+			width: 50px;
+			height: 50px;
+			float: left;
+		}
+		dl.skill-title{
+			height: 70px;
+		}
+		dd.soft-skill{
+			font-size: 32px;
+			color: white;
+			font-weight: bold;
+			padding: 0px 20px;
+			float: left;
+		} 
+		dd.skill-en{
+			font-size: 18px;
+			color: #72778b;
+			float: left;
+			position: relative;
+			left: -148px;
+			top: 40px;
+		}
+		.skill-show{
+			background: url(img/other/skill_show.png) no-repeat;
+			width: 755px;
+			height: 93px;
+			position: relative;
+			left: 100px;
+			top: 20px;
+		}
+		.footer{
+			background: #070711;
+			width: 100%;
+			height: 60px;
+			position: fixed;
+			bottom: 0px;
+		}
+		.contact{
+			color: #585877;
+			overflow: hidden;
+			list-style: none;
+			display: inline-block;
+			position: relative;
+			left: 50%;
+			margin-left: -460px;
+			top: 50%;
+			margin-top: -15px;
+
+		}
+		.dialer{
+			width: 150px;
+			height: 30px;
+			line-height: 26px;
+			text-indent: 30px;
+			background: url(img/other/contact_dialer.png) no-repeat;
+			background-position: left;
+			float: left;
+			padding: 0px 50px 0px 0px;
+		}
+		.wechat{
+			width: 150px;
+			height: 30px;
+			line-height: 26px;
+			text-indent:30px;
+			background: url(img/other/contact_wechat.png) no-repeat;
+			background-position: left;
+			float: left;
+			padding: 0px 50px 0px 0px;
+		}
+		.qq{
+			width: 150px;
+			height: 30px;
+			line-height: 26px;
+			text-indent: 30px;
+			background: url(img/other/contact_qq.png) no-repeat;
+			background-position: left;
+			float: left;
+			padding: 0px 50px 0px 0px;
+		}
+		.mail{
+			width: 150px;
+			height: 30px;
+			line-height: 26px;
+			text-indent: 30px;
+			background: url(img/other/contact_mail.png) no-repeat;
+			background-position: left;
+			float: left;
+			padding: 0px 50px 0px 0px;
+		}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="resume">一个沉默的GUI射鸡湿</div>
+		</div>
+		<div class="content">
+			<div class="nav">
+				<span>简历导航</span>
+				<ul>
+					<li class="li1">项目作品</li>
+					<li class="li2">个人作品</li>
+					<li class="li3">我的简历</li>
+					<li class="li4">其它</li>
+				</ul>
+			</div>
+			<div class="show">
+				<div class="introduce">
+					<dl>
+						<dt class="head"></dt>
+						<dd class="name">雷义海</dd>
+						<dd class="job">GUI Designer</dd>
+					</dl>
+					<p>高中毕业。希望于  珠海/广州  就职。能够和程序、策划进行良好有效的沟通。工作认真负责，有较强的学习意识。<br>
+					希望在将来的就职项目中进一步提高自己的能力。并希望将来能够独立制作一款小游戏。</p>
+				</div>	
+				<div class="experience">			
+					<dl class="exp-title">
+						<dt class="exp-icon"></dt>
+						<dd class="work-exp">工作经验</dd>
+						<dd class="exp-en">work experience</dd>
+					</dl>
+					<div class="exp-show"></div>
+				</div>
+				<div class="skill">
+					<dl class="skill-title">
+						<dt class="skill-icon"></dt>
+						<dd class="soft-skill">软件技能</dd>
+						<dd class="skill-en">software skill</dd>
+					</dl>
+					<div class="skill-show"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul class="contact">
+				<li class="dialer">13560195041</li>
+				<li class="wechat">Momo-lei</li>
+				<li class="qq">914120289</li>
+				<li class="mail">leiyihai@vip.qq.com</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
